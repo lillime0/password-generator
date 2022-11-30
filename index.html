@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
+    <meta name="author" content="Lilli" />
+    <meta name="description" content="Generate a quick and strong password" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Password Generator</h1>
+      <div class="result-container">
+        <p id="result" class="result"></p>
+        <span class="copy-icon">
+          <i class="fas fa-copy" role="img" aria-label="true"></i>
+        </span>
+      </div>
+      <form class="form">
+        <div class="wrapper">
+          <input type="range" id="length" min="8" max="20" value="10" />
+          <label for="length"><span id="password-length">10</span> Chars</label>
+        </div>
+        <div class="wrapper">
+          <label for="numbers">Include numbers</label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+        <div class="wrapper">
+          <label for="symbols">Include symbols</label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
+        <div class="wrapper">
+          <label for="lowercase">Include lowercase letters</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="wrapper">
+          <label for="uppercase">Include uppercase letters</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <button type="submit" class="generate-btn">Generate</button>
+      </form>
+    </main>
+  </body>
+</html>

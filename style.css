@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+html {
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  margin-inline: auto;
+  margin-block-start: 5em;
+}
+h1,
+form,
+.copy-icon {
+  user-select: none;
+}
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Impact", "Agency FB", cursive;
+  letter-spacing: 0.02rem;
+}
+.result-container {
+  background-color: #ddd;
+  margin-block-start: 1.2em;
+  border-radius: 0.25rem;
+  padding: 0.5em 1em;
+  position: relative;
+  width: clamp(200px, 80%, 300px);
+  min-height: 2.6rem;
+  margin-inline: auto;
+}
+.result {
+  word-break: break-all;
+}
+.copy-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.4rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  cursor: pointer;
+  color: gray;
+}
+.copy-icon:active {
+  color: mediumspringgreen;
+}
+#password-length {
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  margin-block-start: 1.25em;
+  width: clamp(200px, 80%, 300px);
+  font-size: 1rem;
+}
+@media (width >= 500px) {
+  .form {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 0.4em;
+}
+.form input {
+  accent-color: mediumspringgreen;
+  text-align: end;
+}
+.form label {
+  text-transform: capitalize;
+}
+.generate-btn {
+  background-color: #ddd;
+  margin-block-start: 1.5em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  margin-inline: auto;
+  display: inline-block;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.generate-btn:hover,
+.generate-btn:active {
+  background-color: mediumspringgreen;
+}
+::selection {
+  background-color: mediumspringgreen;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+  }
+  h1 {
+    color: #ddd;
+  }
+  form {
+    color: white;
+  }
+  .result-container {
+    background-color: #333;
+    color: white;
+  }
+  .generate-btn {
+    background-color: #666;
+    color: white;
+  }
+  .generate-btn:hover,
+  .generate-btn:active {
+    color: black;
+  }
+}
