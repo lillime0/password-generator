@@ -101,6 +101,7 @@ h1 {
 }
 ::selection {
   background-color: mediumspringgreen;
+  color: black;
 }
 @media (prefers-color-scheme: dark) {
   body {
